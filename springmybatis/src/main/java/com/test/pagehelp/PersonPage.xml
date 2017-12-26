@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.pagehelp.PersonPageMapper">
+	<resultMap type="PersonPage" id="resultPerson">
+		<id column="id" property="id" />
+		<result column="personname" property="personname" />
+		<result column="age" property="age" />
+		<result column="sex" property="sex" />
+	</resultMap>
+
+	<select id="getPersons" resultMap="resultPerson" >
+		SELECT *
+		FROM person
+	</select>
+
+
+</mapper>
+
