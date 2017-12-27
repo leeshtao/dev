@@ -15,7 +15,8 @@ public class Consumer implements Runnable{
 			while(true){ 
 				Thread.sleep(random.nextInt(10)); 
 				System.out.println(Thread.currentThread().getName()+ "准备消费..."); 
-				String temp = queue.take();//从队列中取任务消费，如果队列为空，会阻塞当前线程 
+				//从队列中取任务消费，如果队列为空，会阻塞当前线程 
+				String temp = queue.take();
 				System.out.println(Thread.currentThread().getName() + " 获取到工作任务==== " +temp); 
 			} 
 		} catch (InterruptedException e) { 
