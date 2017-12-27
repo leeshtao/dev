@@ -3,7 +3,12 @@ package blockingqueue;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-/** 定义一个盘子类，可以放鸡蛋和取鸡蛋 */ 
+/** 
+ * 
+ * 定义一个盘子类，可以放鸡蛋和取鸡蛋 
+ * BlockingQueue
+ * 
+ */ 
 public class BigPlate {
 
     /** 装鸡蛋的盘子，大小为5 */  
